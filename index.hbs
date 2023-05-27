@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <!-- CSS only -->
+    <title>Home</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+  {{>navbar data=details}}
+    
+  {{>slider  imgData=imgData}}
+   <div class="box">
+    <h1 class="heading">Welcome to AnoSt</h1>
+    <p>AnoSt is a platform where you can do analysis of stocks</p>
+   </div>
+   <hr>
+    <div class="box1">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <i class="fa-solid fa-business-time"></i>
+          <h4 class="heading"><a href="/market">Market</a></h4>
+
+        </div>
+        <div class="col">
+          <i class="fa-regular fa-newspaper"></i>
+          <h4  class="heading"><a href="news">News</a></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <i class="fa-solid fa-building"></i>
+                    <h4  class="heading"><a href="IPO">IPO</a></h4>
+
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-person"></i>
+                    <h4  class="heading"><a href="investoors">Super Investors</a></h4>
+                  </div>
+      </div>
+      </div>
+      </div>
+        <hr>
+        <h3 class="text">AS YOU GROW, WE GROW</h3>
+         <h3 class="text">LET’S SCALE NEW HEIGHTS TOGETHER</h3>
+        <hr>
+        <div class="formbold-main-wrapper" >
+         
+          <div class="formbold-form-wrapper">
+            <form action="/" method="POST" id="contact">
+              <div class="formbold-mb-5">
+                <label for="name" class="formbold-form-label"> Full Name </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Full Name"
+                  class="formbold-form-input"
+                />
+              </div>
+        
+              <div class="formbold-mb-5">
+                <label for="email" class="formbold-form-label"> Email Address </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  class="formbold-form-input"
+                />
+              </div>
+        
+              <div class="formbold-mb-5">
+                <label for="subject" class="formbold-form-label"> Subject </label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Enter your subject"
+                  class="formbold-form-input"
+                />
+              </div>
+        
+              <div class="formbold-mb-5">
+                <label for="message" class="formbold-form-label"> Message </label>
+                <textarea
+                  rows="6"
+                  name="message"
+                  id="message"
+                  placeholder="Type your message"
+                  class="formbold-form-input"
+                ></textarea>
+              </div>
+        
+              <div>
+                <button class="formbold-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="last">
+          <h5>AnoSt Technologies</h5>
+        </div>
+       
+        <script src="https://kit.fontawesome.com/795fdb4bef.js" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+         
+</body>
+</html>
